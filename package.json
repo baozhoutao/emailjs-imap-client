@@ -9,7 +9,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "engines": {
     "node": ">=4.0.0"
